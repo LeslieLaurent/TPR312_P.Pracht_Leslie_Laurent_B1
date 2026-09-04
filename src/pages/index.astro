@@ -1,11 +1,239 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Data Explorer">
+
+  <main class="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+
+    <section class="flex min-h-[65vh] flex-col justify-center">
+
+      <p
+        class="mb-5 text-sm font-bold uppercase tracking-[0.2em]
+               text-emerald-700"
+      >
+        Astro × Observable Plot
+      </p>
+
+      <h1
+        class="max-w-5xl text-6xl font-bold leading-[0.95]
+               tracking-tight text-slate-900
+               md:text-8xl"
+      >
+        Explorer les données
+        <span class="block text-emerald-700">
+          autrement.
+        </span>
+      </h1>
+
+      <p
+        class="mt-8 max-w-2xl text-lg leading-8 text-slate-600"
+      >
+        Trois jeux de données, plusieurs visualisations et différentes
+        manières de raconter ce que les données révèlent avec Observable Plot.
+      </p>
+
+      <a
+        href="#datasets"
+        class="mt-8 w-fit rounded-full bg-slate-900 px-6 py-3
+               font-medium text-white transition
+               hover:-translate-y-1 hover:bg-emerald-700
+               focus-visible:outline focus-visible:outline-4
+               focus-visible:outline-offset-4 focus-visible:outline-emerald-600"
+      >
+        Découvrir les datasets ↓
+      </a>
+
+    </section>
+
+
+    <section
+      id="datasets"
+      class="py-24"
+      aria-labelledby="datasets-title"
+    >
+
+      <div class="mb-12">
+
+        <p
+          class="mb-3 text-sm font-bold uppercase tracking-[0.2em]
+                 text-emerald-700"
+        >
+          Explorations
+        </p>
+
+        <h2
+          id="datasets-title"
+          class="text-4xl font-bold tracking-tight text-slate-900
+                 md:text-6xl"
+        >
+          Choisir un sujet
+        </h2>
+
+      </div>
+
+
+      <div class="grid gap-6 md:grid-cols-3">
+
+        <!-- PENGUINS -->
+
+        <a
+          href="/penguins"
+          class="group flex min-h-[420px] flex-col justify-between
+                 rounded-3xl border border-slate-200 bg-white p-8
+                 transition duration-300
+                 hover:-translate-y-2 hover:bg-slate-900
+                 hover:text-white hover:shadow-xl"
+        >
+
+          <div class="flex items-center justify-between">
+
+            <span class="font-bold text-emerald-700">
+              01
+            </span>
+
+            <span
+              class="text-2xl transition group-hover:-translate-y-1
+                     group-hover:translate-x-1"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </div>
+
+          <div>
+
+            <h3 class="text-4xl font-bold tracking-tight">
+              Penguins
+            </h3>
+
+            <p
+              class="mt-5 leading-7 text-slate-600
+                     group-hover:text-slate-300"
+            >
+              Morphologie, répartition et masse corporelle
+              de plusieurs espèces de manchots.
+            </p>
+
+          </div>
+
+          <span
+            class="text-sm text-slate-500 group-hover:text-slate-400"
+          >
+            3 visualisations
+          </span>
+
+        </a>
+
+
+        <!-- CARS -->
+
+        <a
+          href="/cars"
+          class="group flex min-h-[420px] flex-col justify-between
+                 rounded-3xl border border-slate-200 bg-white p-8
+                 transition duration-300
+                 hover:-translate-y-2 hover:bg-slate-900
+                 hover:text-white hover:shadow-xl"
+        >
+
+          <div class="flex items-center justify-between">
+
+            <span class="font-bold text-emerald-700">
+              02
+            </span>
+
+            <span
+              class="text-2xl transition group-hover:-translate-y-1
+                     group-hover:translate-x-1"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </div>
+
+          <div>
+
+            <h3 class="text-4xl font-bold tracking-tight">
+              Cars
+            </h3>
+
+            <p
+              class="mt-5 leading-7 text-slate-600
+                     group-hover:text-slate-300"
+            >
+              Consommation, puissance, cylindres et poids
+              de différents modèles automobiles.
+            </p>
+
+          </div>
+
+          <span
+            class="text-sm text-slate-500 group-hover:text-slate-400"
+          >
+            3 visualisations
+          </span>
+
+        </a>
+
+
+        <!-- PIZZA -->
+
+        <a
+          href="/pizza"
+          class="group flex min-h-[420px] flex-col justify-between
+                 rounded-3xl border border-slate-200 bg-white p-8
+                 transition duration-300
+                 hover:-translate-y-2 hover:bg-slate-900
+                 hover:text-white hover:shadow-xl"
+        >
+
+          <div class="flex items-center justify-between">
+
+            <span class="font-bold text-emerald-700">
+              03
+            </span>
+
+            <span
+              class="text-2xl transition group-hover:-translate-y-1
+                     group-hover:translate-x-1"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+
+          </div>
+
+          <div>
+
+            <h3 class="text-4xl font-bold tracking-tight">
+              Pizza
+            </h3>
+
+            <p
+              class="mt-5 leading-7 text-slate-600
+                     group-hover:text-slate-300"
+            >
+              Commandes, chiffre d'affaires, catégories
+              et habitudes de consommation.
+            </p>
+
+          </div>
+
+          <span
+            class="text-sm text-slate-500 group-hover:text-slate-400"
+          >
+            3 visualisations
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
 </Layout>

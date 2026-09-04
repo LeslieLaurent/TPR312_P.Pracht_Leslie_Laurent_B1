@@ -1,0 +1,24 @@
+---
+import * as Plot from "@observablehq/plot";
+import { JSDOM } from "jsdom";
+
+const { options } = Astro.props;
+
+const plot = Plot.plot({
+  ...options,
+  document: new JSDOM("").window.document,
+});
+---
+
+<div
+  class="w-full overflow-x-auto
+         [&_figure]:m-0
+         [&_figure]:w-full
+         [&_svg]:h-auto
+         [&_svg]:w-full
+         [&_svg]:max-w-full
+         [&_figcaption]:mt-4
+         [&_figcaption]:text-sm
+         [&_figcaption]:text-slate-500"
+  set:html={plot.outerHTML}
+/>

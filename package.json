@@ -12,7 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.1"
+    "@observablehq/plot": "^0.6.17",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.1",
+    "d3-dsv": "^3.0.1",
+    "jsdom": "^29.1.1",
+    "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
     "esbuild": true
