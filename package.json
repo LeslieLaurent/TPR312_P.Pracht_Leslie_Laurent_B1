@@ -15,6 +15,7 @@
     "@astrojs/netlify": "^8.2.5",
     "@observablehq/plot": "^0.6.17",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/jsdom": "^30.0.0",
     "astro": "^7.3.1",
     "d3-dsv": "^3.0.1",
     "jsdom": "^29.1.1",
