@@ -23,5 +23,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "@types/d3-dsv": "^3.0.7"
   }
 }
